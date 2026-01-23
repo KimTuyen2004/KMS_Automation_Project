@@ -1,0 +1,71 @@
+2026-01-23 20:33:34.604 INFO  c.k.k.c.l.logback.LogbackConfigurator    - Logback default configuration initialized from: C:\Users\ADMIN\.katalon\packages\KSE-10.4.3\configuration\org.eclipse.osgi\133\0\.cp\resources\logback\logback-execution.xml
+2026-01-23 20:33:34.604 INFO  c.k.k.c.l.logback.LogbackConfigurator    - Logback custom configuration initialized from: D:\KMS_Automation_Project\Include\config\log.properties
+2026-01-23 20:33:35.722 INFO  c.k.katalon.core.main.TestSuiteExecutor  - START Test Suites/TS_Cura_Appointment_Flow
+2026-01-23 20:33:35.822 INFO  c.k.katalon.core.main.TestSuiteExecutor  - userFullName = Hà Sang Nguyễn
+2026-01-23 20:33:35.828 INFO  c.k.katalon.core.main.TestSuiteExecutor  - projectName = KMS_Automation_Project
+2026-01-23 20:33:35.831 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostName = ADMIN - DESKTOP-R4TO9PD
+2026-01-23 20:33:35.832 INFO  c.k.katalon.core.main.TestSuiteExecutor  - os = Windows 10 64bit
+2026-01-23 20:33:35.834 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostAddress = 172.20.10.3
+2026-01-23 20:33:35.834 INFO  c.k.katalon.core.main.TestSuiteExecutor  - katalonVersion = 10.4.3.0
+2026-01-23 20:33:36.289 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2026-01-23 20:33:36.405 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+Jan 23, 2026 8:33:38 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 143, returning the closest version; found: 142; Please update to a Selenium version that supports CDP version 143
+2026-01-23 20:33:39.501 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = a41374dffce4124f901295bd2e7177d6
+2026-01-23 20:33:39.510 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 143.0.7499.171
+2026-01-23 20:33:39.510 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 10
+2026-01-23 20:33:39.512 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.34.0
+2026-01-23 20:33:39.526 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-01-23 20:33:44.418 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-01-23 20:33:44.418 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/Login
+2026-01-23 20:33:44.552 DEBUG testcase.Login                           - 1: waitForElementVisible(findTestObject("Cura/Home/btn_MakeAppointment"), 10)
+2026-01-23 20:33:45.059 DEBUG testcase.Login                           - 2: click(findTestObject("Cura/Home/btn_MakeAppointment"))
+2026-01-23 20:33:46.083 DEBUG testcase.Login                           - 3: waitForElementVisible(findTestObject("Cura/Login/txtUsername"), 10)
+2026-01-23 20:33:46.490 DEBUG testcase.Login                           - 4: setText(findTestObject("Cura/Login/txtUsername"), "John Doe")
+2026-01-23 20:33:47.448 DEBUG testcase.Login                           - 5: setText(findTestObject("Cura/Login/txtPassword"), "ThisIsNotAPassword")
+2026-01-23 20:33:48.355 DEBUG testcase.Login                           - 6: click(findTestObject("Cura/Login/btnLogin"))
+2026-01-23 20:33:49.572 DEBUG testcase.Login                           - 7: waitForElementVisible(findTestObject("Cura/Appointment/lbl_MakeAppointment"), 10)
+2026-01-23 20:33:50.106 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/Login
+2026-01-23 20:33:50.112 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-01-23 20:33:50.112 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/Appointment
+2026-01-23 20:33:50.344 DEBUG testcase.Appointment                     - 1: SmartWait.waitVisible(findTestObject("Cura/Appointment/lbl_MakeAppointment"), 20)
+2026-01-23 20:33:50.659 DEBUG testcase.Appointment                     - 2: SmartWait.waitClickable(findTestObject("Cura/Appointment/sel_Facility"), 15)
+2026-01-23 20:33:51.854 DEBUG testcase.Appointment                     - 3: selectOptionByLabel(findTestObject("Cura/Appointment/sel_Facility"), "Hongkong CURA Healthcare Center", false)
+2026-01-23 20:33:52.555 DEBUG testcase.Appointment                     - 4: SmartWait.waitClickable(findTestObject("Cura/Appointment/chk_HospitalReadmission"), 10)
+2026-01-23 20:33:53.590 DEBUG testcase.Appointment                     - 5: SmartWait.waitClickable(findTestObject("Cura/Appointment/rad_Medicaid"), 10)
+2026-01-23 20:33:54.683 DEBUG testcase.Appointment                     - 6: SmartWait.waitClickable(findTestObject("Cura/Appointment/txt_VisitDate"), 20)
+2026-01-23 20:33:55.779 DEBUG testcase.Appointment                     - 7: components.CalendarPicker.selectDatePlusDays(30)
+2026-01-23 20:33:58.657 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - components.CalendarPicker.selectDatePlusDays is PASSED
+2026-01-23 20:33:58.665 DEBUG testcase.Appointment                     - 8: SmartWait.waitVisible(findTestObject("Cura/Appointment/txt_Comment"), 10)
+2026-01-23 20:33:59.200 DEBUG testcase.Appointment                     - 9: setText(findTestObject("Cura/Appointment/txt_Comment"), "Katalon Advanced Automation")
+2026-01-23 20:34:00.166 DEBUG testcase.Appointment                     - 10: SmartWait.waitClickable(findTestObject("Cura/Appointment/btn_BookAppointment"), 20)
+2026-01-23 20:34:01.245 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/Appointment
+2026-01-23 20:34:01.253 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-01-23 20:34:01.254 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/Summary
+2026-01-23 20:34:01.423 DEBUG testcase.Summary                         - 1: SmartWait.waitVisible(findTestObject("Cura/Summary/lbl_Confirm_Title"), 20)
+2026-01-23 20:34:02.655 DEBUG testcase.Summary                         - 2: verifyElementText(findTestObject("Cura/Summary/lbl_Confirm_Title"), "Appointment Confirmation")
+2026-01-23 20:34:02.941 DEBUG testcase.Summary                         - 3: facilityRaw = getText(findTestObject("Cura/Summary/lbl_Facility_Value"))
+2026-01-23 20:34:03.240 DEBUG testcase.Summary                         - 4: readmissionRaw = getText(findTestObject("Cura/Summary/lbl_Readmission_Value"))
+2026-01-23 20:34:03.541 DEBUG testcase.Summary                         - 5: programRaw = getText(findTestObject("Cura/Summary/lbl_Program_Value"))
+2026-01-23 20:34:03.834 DEBUG testcase.Summary                         - 6: visitDateRaw = getText(findTestObject("Cura/Summary/lbl_VisitDate_Value"))
+2026-01-23 20:34:04.118 DEBUG testcase.Summary                         - 7: commentRaw = getText(findTestObject("Cura/Summary/lbl_Comment_Value"))
+2026-01-23 20:34:04.412 DEBUG testcase.Summary                         - 8: facility = replace("Facility", "").trim()
+2026-01-23 20:34:04.420 DEBUG testcase.Summary                         - 9: readmission = replace("Apply for hospital readmission", "").trim()
+2026-01-23 20:34:04.421 DEBUG testcase.Summary                         - 10: program = replace("Healthcare Program", "").trim()
+2026-01-23 20:34:04.425 DEBUG testcase.Summary                         - 11: visitDate = replace("Visit Date", "").trim()
+2026-01-23 20:34:04.428 DEBUG testcase.Summary                         - 12: comment = replace("Comment", "").trim()
+2026-01-23 20:34:04.432 DEBUG testcase.Summary                         - 13: verifyEqual(facility, "Hongkong CURA Healthcare Center")
+2026-01-23 20:34:04.448 DEBUG testcase.Summary                         - 14: verifyEqual(readmission, "Yes")
+2026-01-23 20:34:04.453 DEBUG testcase.Summary                         - 15: verifyEqual(program, "Medicaid")
+2026-01-23 20:34:04.457 DEBUG testcase.Summary                         - 16: verifyMatch(visitDate, "\d{2}/\d{2}/\d{4}", true)
+2026-01-23 20:34:04.470 DEBUG testcase.Summary                         - 17: verifyEqual(comment, "Katalon Advanced Automation")
+2026-01-23 20:34:04.474 DEBUG testcase.Summary                         - 18: Visual.compareSummaryPage()
+>>> Capturing ACTUAL image
+Diff pixels: 0
+Diff percent: 0.0%
+2026-01-23 20:34:05.190 INFO  c.k.k.c.keyword.builtin.CommentKeyword   -  UI MATCH - Visual Regression PASSED
+2026-01-23 20:34:05.191 DEBUG testcase.Summary                         - 19: SmartWait.waitClickable(findTestObject("Cura/Summary/btn_GoToHomepage"), 15)
+2026-01-23 20:34:07.179 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/Summary
+2026-01-23 20:34:07.529 INFO  c.k.katalon.core.main.TestSuiteExecutor  - --------------------
+2026-01-23 20:34:07.529 INFO  c.k.katalon.core.main.TestSuiteExecutor  - END Test Suites/TS_Cura_Appointment_Flow
+2026-01-23 20:34:07.529 INFO  c.k.katalon.core.main.TestSuiteExecutor  - ====================

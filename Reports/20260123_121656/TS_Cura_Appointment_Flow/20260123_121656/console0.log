@@ -1,0 +1,43 @@
+2026-01-23 12:17:01.176 INFO  c.k.k.c.l.logback.LogbackConfigurator    - Logback default configuration initialized from: C:\Users\ADMIN\.katalon\packages\KSE-10.4.3\configuration\org.eclipse.osgi\133\0\.cp\resources\logback\logback-execution.xml
+2026-01-23 12:17:01.192 INFO  c.k.k.c.l.logback.LogbackConfigurator    - Logback custom configuration initialized from: D:\KMS_Automation_Project\Include\config\log.properties
+2026-01-23 12:17:02.446 INFO  c.k.katalon.core.main.TestSuiteExecutor  - START Test Suites/TS_Cura_Appointment_Flow
+2026-01-23 12:17:02.554 INFO  c.k.katalon.core.main.TestSuiteExecutor  - userFullName = Hà Sang Nguyễn
+2026-01-23 12:17:02.563 INFO  c.k.katalon.core.main.TestSuiteExecutor  - projectName = KMS_Automation_Project
+2026-01-23 12:17:02.563 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostName = ADMIN - DESKTOP-R4TO9PD
+2026-01-23 12:17:02.563 INFO  c.k.katalon.core.main.TestSuiteExecutor  - os = Windows 10 64bit
+2026-01-23 12:17:02.563 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostAddress = 172.20.10.3
+2026-01-23 12:17:02.571 INFO  c.k.katalon.core.main.TestSuiteExecutor  - katalonVersion = 10.4.3.0
+2026-01-23 12:17:02.946 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2026-01-23 12:17:03.045 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+Jan 23, 2026 12:17:05 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 143, returning the closest version; found: 142; Please update to a Selenium version that supports CDP version 143
+2026-01-23 12:17:07.220 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 07c5f0565d71fe950eed112a180649db
+2026-01-23 12:17:07.228 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 143.0.7499.171
+2026-01-23 12:17:07.230 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 10
+2026-01-23 12:17:07.232 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.34.0
+2026-01-23 12:17:07.255 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-01-23 12:17:11.837 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-01-23 12:17:11.853 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/Login
+2026-01-23 12:17:12.058 DEBUG testcase.Login                           - 1: waitForElementVisible(findTestObject("Cura/Home/btn_MakeAppointment"), 10)
+2026-01-23 12:17:12.706 DEBUG testcase.Login                           - 2: click(findTestObject("Cura/Home/btn_MakeAppointment"))
+2026-01-23 12:17:13.916 DEBUG testcase.Login                           - 3: waitForElementVisible(findTestObject("Cura/Login/txtUsername"), 10)
+2026-01-23 12:17:14.353 DEBUG testcase.Login                           - 4: setText(findTestObject("Cura/Login/txtUsername"), "John Doe")
+2026-01-23 12:17:15.453 DEBUG testcase.Login                           - 5: setText(findTestObject("Cura/Login/txtPassword"), "ThisIsNotAPassword")
+2026-01-23 12:17:16.466 DEBUG testcase.Login                           - 6: click(findTestObject("Cura/Login/btnLogin"))
+2026-01-23 12:17:18.430 DEBUG testcase.Login                           - 7: waitForElementVisible(findTestObject("Cura/Appointment/lbl_MakeAppointment"), 10)
+2026-01-23 12:17:18.939 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/Login
+2026-01-23 12:17:18.948 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-01-23 12:17:18.949 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/Appointment
+2026-01-23 12:17:19.171 DEBUG testcase.Appointment                     - 1: verifyElementPresent(findTestObject("Cura/Appointment/lbl_MakeAppointment"), 10, STOP_ON_FAILURE)
+2026-01-23 12:17:19.486 DEBUG testcase.Appointment                     - 2: selectOptionByLabel(findTestObject("Cura/Appointment/sel_Facility"), "Hongkong CURA Healthcare Center", false)
+2026-01-23 12:17:20.274 DEBUG testcase.Appointment                     - 3: check(findTestObject("Cura/Appointment/chk_HospitalReadmission"))
+2026-01-23 12:17:20.880 DEBUG testcase.Appointment                     - 4: click(findTestObject("Cura/Appointment/rad_Medicaid"))
+2026-01-23 12:17:21.461 DEBUG testcase.Appointment                     - 5: click(findTestObject("Cura/Appointment/txt_VisitDate"))
+2026-01-23 12:17:22.087 DEBUG testcase.Appointment                     - 6: components.CalendarPicker.selectDatePlusDays(30)
+2026-01-23 12:17:23.448 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - components.CalendarPicker.selectDatePlusDays is PASSED
+2026-01-23 12:17:23.452 DEBUG testcase.Appointment                     - 7: setText(findTestObject("Cura/Appointment/txt_Comment"), "Katalon Advanced Automation")
+2026-01-23 12:17:24.692 DEBUG testcase.Appointment                     - 8: click(findTestObject("Cura/Appointment/btn_BookAppointment"))
+2026-01-23 12:17:26.522 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/Appointment
+2026-01-23 12:17:27.038 INFO  c.k.katalon.core.main.TestSuiteExecutor  - --------------------
+2026-01-23 12:17:27.038 INFO  c.k.katalon.core.main.TestSuiteExecutor  - END Test Suites/TS_Cura_Appointment_Flow
+2026-01-23 12:17:27.038 INFO  c.k.katalon.core.main.TestSuiteExecutor  - ====================

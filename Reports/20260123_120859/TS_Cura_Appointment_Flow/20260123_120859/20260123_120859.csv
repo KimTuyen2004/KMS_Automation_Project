@@ -1,0 +1,20 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+TS_Cura_Appointment_Flow,Chrome 143.0.7499.171,,,23-01-2026 12:09:05,23-01-2026 12:09:23,18.720s,FAILED
+,,,,,,,
+Start listener action : beforeTestSuite,Chrome 143.0.7499.171,,,23-01-2026 12:09:05,23-01-2026 12:09:12,7.282s,PASSED
+,,,,,,,
+Test Cases/Login,Chrome 143.0.7499.171,,,23-01-2026 12:09:12,23-01-2026 12:09:18,5.776s,PASSED
+"waitForElementVisible(findTestObject(""Cura/Home/btn_MakeAppointment""), 10)",Chrome 143.0.7499.171,,,23-01-2026 12:09:13,23-01-2026 12:09:13,0.563s,PASSED
+"click(findTestObject(""Cura/Home/btn_MakeAppointment""))",Chrome 143.0.7499.171,,,23-01-2026 12:09:13,23-01-2026 12:09:14,1.030s,PASSED
+"waitForElementVisible(findTestObject(""Cura/Login/txtUsername""), 10)",Chrome 143.0.7499.171,,,23-01-2026 12:09:14,23-01-2026 12:09:15,0.426s,PASSED
+"setText(findTestObject(""Cura/Login/txtUsername""), ""John Doe"")",Chrome 143.0.7499.171,,,23-01-2026 12:09:15,23-01-2026 12:09:16,0.991s,PASSED
+"setText(findTestObject(""Cura/Login/txtPassword""), ""ThisIsNotAPassword"")",Chrome 143.0.7499.171,,,23-01-2026 12:09:16,23-01-2026 12:09:17,0.958s,PASSED
+"click(findTestObject(""Cura/Login/btnLogin""))",Chrome 143.0.7499.171,,,23-01-2026 12:09:17,23-01-2026 12:09:18,1.218s,PASSED
+"waitForElementVisible(findTestObject(""Cura/Appointment/lbl_MakeAppointment""), 10)",Chrome 143.0.7499.171,,,23-01-2026 12:09:18,23-01-2026 12:09:18,0.435s,PASSED
+,,,,,,,
+Test Cases/Appointment,Chrome 143.0.7499.171,,,23-01-2026 12:09:22,23-01-2026 12:09:23,1.059s,FAILED
+"waitForElementVisible(findTestObject(""Cura/Appointment/sel_Facility""), 10)",Chrome 143.0.7499.171,,,23-01-2026 12:09:22,23-01-2026 12:09:22,0.300s,PASSED
+"selectOptionByLabel(findTestObject(""Cura/Appointment/sel_Facility""), ""Hongkong CURA Healthcare Center"", false)",Chrome 143.0.7499.171,,,23-01-2026 12:09:22,23-01-2026 12:09:23,0.610s,PASSED
+"click(findTestObject(""Cura/Appointment/chk_Readmission""))",Chrome 143.0.7499.171,,,23-01-2026 12:09:23,23-01-2026 12:09:23,0.126s,FAILED
+,,,,,,,
+Start listener action : afterTestSuite,Chrome 143.0.7499.171,,,23-01-2026 12:09:23,23-01-2026 12:09:23,0.278s,PASSED

@@ -1,0 +1,21 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+TS_Cura_Appointment_Flow,Chrome 143.0.7499.171,,,22-01-2026 23:59:34,23-01-2026 00:03:15,3m - 41.564s,FAILED
+,,,,,,,
+Start listener action : beforeSuite,Chrome 143.0.7499.171,,,22-01-2026 23:59:34,22-01-2026 23:59:42,8.003s,PASSED
+,,,,,,,
+Test Cases/Login,Chrome 143.0.7499.171,,,23-01-2026 00:00:34,23-01-2026 00:00:51,17.218s,FAILED
+core.BaseTest.setup(false),Chrome 143.0.7499.171,,,23-01-2026 00:00:34,23-01-2026 00:00:40,6.021s,PASSED
+"setText(findTestObject(""Cura/Login/txtUsername""), ""John Doe"")",Chrome 143.0.7499.171,,,23-01-2026 00:00:40,23-01-2026 00:00:51,11.167s,FAILED
+,,,,,,,
+Test Cases/Appointment,Chrome 143.0.7499.171,,,23-01-2026 00:01:24,23-01-2026 00:01:35,10.867s,FAILED
+"selectOptionByValue(findTestObject(""Object Repository/Cura/Appointment/sel_Facility""), ""Hongkong CURA Healthcare Center"", false)",Chrome 143.0.7499.171,,,23-01-2026 00:01:24,23-01-2026 00:01:35,10.846s,FAILED
+,,,,,,,
+Test Cases/Summary,Chrome 143.0.7499.171,,,23-01-2026 00:02:47,23-01-2026 00:03:11,23.838s,FAILED
+"waitForElementVisible(findTestObject(""Object Repository/Cura/Summary/lbl_Confirm_Title""), 10)",Chrome 143.0.7499.171,,,23-01-2026 00:02:47,23-01-2026 00:02:57,10.008s,WARNING
+"takeScreenshotAsCheckpoint(""Summary_Page_Visual"")",Chrome 143.0.7499.171,,,23-01-2026 00:02:57,23-01-2026 00:02:58,1.133s,PASSED
+"verifyElementText(findTestObject(""Object Repository/Cura/Summary/lbl_Facility_Value""), ""Hongkong CURA Healthcare Center"")",Chrome 143.0.7499.171,,,23-01-2026 00:02:58,23-01-2026 00:03:11,12.682s,FAILED
+,,,,,,,
+Test Cases/Logout,Chrome 143.0.7499.171,,,23-01-2026 00:03:14,23-01-2026 00:03:15,0.883s,FAILED
+components.SideMenu.logout(),Chrome 143.0.7499.171,,,23-01-2026 00:03:14,23-01-2026 00:03:15,0.870s,FAILED
+,,,,,,,
+Start listener action : afterSuite,Chrome 143.0.7499.171,,,23-01-2026 00:03:15,23-01-2026 00:03:15,0.278s,PASSED

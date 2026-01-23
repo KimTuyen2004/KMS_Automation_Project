@@ -1,0 +1,8 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+TS_Cura_Appointment_Flow,,,,23-01-2026 12:01:31,23-01-2026 12:01:33,2.111s,ERROR
+,,,,,,,
+Test Cases/Login,,,,23-01-2026 12:01:32,23-01-2026 12:01:32,0.062s,ERROR
+"waitForElementVisible(findTestObject(""Cura/Home/btn_MakeAppointment""), 10)",,,,23-01-2026 12:01:32,23-01-2026 12:01:32,0.020s,ERROR
+,,,,,,,
+Test Cases/Appointment,,,,23-01-2026 12:01:33,23-01-2026 12:01:33,0.065s,ERROR
+"waitForElementVisible(findTestObject(""Cura/Appointment/sel_Facility""), 10)",,,,23-01-2026 12:01:33,23-01-2026 12:01:33,0.034s,ERROR

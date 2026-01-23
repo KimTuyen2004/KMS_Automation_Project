@@ -1,0 +1,48 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+TS_Cura_Appointment_Flow,Chrome 143.0.7499.171,,,23-01-2026 20:33:35,23-01-2026 20:34:07,31.731s,PASSED
+,,,,,,,
+Start listener action : beforeTestSuite,Chrome 143.0.7499.171,,,23-01-2026 20:33:35,23-01-2026 20:33:43,8.004s,PASSED
+,,,,,,,
+Test Cases/Login,Chrome 143.0.7499.171,,,23-01-2026 20:33:44,23-01-2026 20:33:50,5.688s,PASSED
+"waitForElementVisible(findTestObject(""Cura/Home/btn_MakeAppointment""), 10)",Chrome 143.0.7499.171,,,23-01-2026 20:33:44,23-01-2026 20:33:45,0.507s,PASSED
+"click(findTestObject(""Cura/Home/btn_MakeAppointment""))",Chrome 143.0.7499.171,,,23-01-2026 20:33:45,23-01-2026 20:33:46,1.024s,PASSED
+"waitForElementVisible(findTestObject(""Cura/Login/txtUsername""), 10)",Chrome 143.0.7499.171,,,23-01-2026 20:33:46,23-01-2026 20:33:46,0.405s,PASSED
+"setText(findTestObject(""Cura/Login/txtUsername""), ""John Doe"")",Chrome 143.0.7499.171,,,23-01-2026 20:33:46,23-01-2026 20:33:47,0.958s,PASSED
+"setText(findTestObject(""Cura/Login/txtPassword""), ""ThisIsNotAPassword"")",Chrome 143.0.7499.171,,,23-01-2026 20:33:47,23-01-2026 20:33:48,0.903s,PASSED
+"click(findTestObject(""Cura/Login/btnLogin""))",Chrome 143.0.7499.171,,,23-01-2026 20:33:48,23-01-2026 20:33:49,1.210s,PASSED
+"waitForElementVisible(findTestObject(""Cura/Appointment/lbl_MakeAppointment""), 10)",Chrome 143.0.7499.171,,,23-01-2026 20:33:49,23-01-2026 20:33:50,0.522s,PASSED
+,,,,,,,
+Test Cases/Appointment,Chrome 143.0.7499.171,,,23-01-2026 20:33:50,23-01-2026 20:34:01,11.133s,PASSED
+"SmartWait.waitVisible(findTestObject(""Cura/Appointment/lbl_MakeAppointment""), 20)",Chrome 143.0.7499.171,,,23-01-2026 20:33:50,23-01-2026 20:33:50,0.315s,PASSED
+"SmartWait.waitClickable(findTestObject(""Cura/Appointment/sel_Facility""), 15)",Chrome 143.0.7499.171,,,23-01-2026 20:33:50,23-01-2026 20:33:51,1.203s,PASSED
+"selectOptionByLabel(findTestObject(""Cura/Appointment/sel_Facility""), ""Hongkong CURA Healthcare Center"", false)",Chrome 143.0.7499.171,,,23-01-2026 20:33:51,23-01-2026 20:33:52,0.693s,PASSED
+"SmartWait.waitClickable(findTestObject(""Cura/Appointment/chk_HospitalReadmission""), 10)",Chrome 143.0.7499.171,,,23-01-2026 20:33:52,23-01-2026 20:33:53,1.035s,PASSED
+"SmartWait.waitClickable(findTestObject(""Cura/Appointment/rad_Medicaid""), 10)",Chrome 143.0.7499.171,,,23-01-2026 20:33:53,23-01-2026 20:33:54,1.093s,PASSED
+"SmartWait.waitClickable(findTestObject(""Cura/Appointment/txt_VisitDate""), 20)",Chrome 143.0.7499.171,,,23-01-2026 20:33:54,23-01-2026 20:33:55,1.090s,PASSED
+components.CalendarPicker.selectDatePlusDays(30),Chrome 143.0.7499.171,,,23-01-2026 20:33:55,23-01-2026 20:33:58,2.883s,PASSED
+"SmartWait.waitVisible(findTestObject(""Cura/Appointment/txt_Comment""), 10)",Chrome 143.0.7499.171,,,23-01-2026 20:33:58,23-01-2026 20:33:59,0.534s,PASSED
+"setText(findTestObject(""Cura/Appointment/txt_Comment""), ""Katalon Advanced Automation"")",Chrome 143.0.7499.171,,,23-01-2026 20:33:59,23-01-2026 20:34:00,0.966s,PASSED
+"SmartWait.waitClickable(findTestObject(""Cura/Appointment/btn_BookAppointment""), 20)",Chrome 143.0.7499.171,,,23-01-2026 20:34:00,23-01-2026 20:34:01,1.065s,PASSED
+,,,,,,,
+Test Cases/Summary,Chrome 143.0.7499.171,,,23-01-2026 20:34:01,23-01-2026 20:34:07,5.925s,PASSED
+"SmartWait.waitVisible(findTestObject(""Cura/Summary/lbl_Confirm_Title""), 20)",Chrome 143.0.7499.171,,,23-01-2026 20:34:01,23-01-2026 20:34:02,1.232s,PASSED
+"verifyElementText(findTestObject(""Cura/Summary/lbl_Confirm_Title""), ""Appointment Confirmation"")",Chrome 143.0.7499.171,,,23-01-2026 20:34:02,23-01-2026 20:34:02,0.286s,PASSED
+"facilityRaw = getText(findTestObject(""Cura/Summary/lbl_Facility_Value""))",Chrome 143.0.7499.171,,,23-01-2026 20:34:02,23-01-2026 20:34:03,0.291s,PASSED
+"readmissionRaw = getText(findTestObject(""Cura/Summary/lbl_Readmission_Value""))",Chrome 143.0.7499.171,,,23-01-2026 20:34:03,23-01-2026 20:34:03,0.297s,PASSED
+"programRaw = getText(findTestObject(""Cura/Summary/lbl_Program_Value""))",Chrome 143.0.7499.171,,,23-01-2026 20:34:03,23-01-2026 20:34:03,0.285s,PASSED
+"visitDateRaw = getText(findTestObject(""Cura/Summary/lbl_VisitDate_Value""))",Chrome 143.0.7499.171,,,23-01-2026 20:34:03,23-01-2026 20:34:04,0.284s,PASSED
+"commentRaw = getText(findTestObject(""Cura/Summary/lbl_Comment_Value""))",Chrome 143.0.7499.171,,,23-01-2026 20:34:04,23-01-2026 20:34:04,0.294s,PASSED
+"facility = replace(""Facility"", """").trim()",Chrome 143.0.7499.171,,,23-01-2026 20:34:04,23-01-2026 20:34:04,0.008s,PASSED
+"readmission = replace(""Apply for hospital readmission"", """").trim()",Chrome 143.0.7499.171,,,23-01-2026 20:34:04,23-01-2026 20:34:04,0.001s,PASSED
+"program = replace(""Healthcare Program"", """").trim()",Chrome 143.0.7499.171,,,23-01-2026 20:34:04,23-01-2026 20:34:04,0.005s,PASSED
+"visitDate = replace(""Visit Date"", """").trim()",Chrome 143.0.7499.171,,,23-01-2026 20:34:04,23-01-2026 20:34:04,0.003s,PASSED
+"comment = replace(""Comment"", """").trim()",Chrome 143.0.7499.171,,,23-01-2026 20:34:04,23-01-2026 20:34:04,0.002s,PASSED
+"verifyEqual(facility, ""Hongkong CURA Healthcare Center"")",Chrome 143.0.7499.171,,,23-01-2026 20:34:04,23-01-2026 20:34:04,0.015s,PASSED
+"verifyEqual(readmission, ""Yes"")",Chrome 143.0.7499.171,,,23-01-2026 20:34:04,23-01-2026 20:34:04,0.004s,PASSED
+"verifyEqual(program, ""Medicaid"")",Chrome 143.0.7499.171,,,23-01-2026 20:34:04,23-01-2026 20:34:04,0.004s,PASSED
+"verifyMatch(visitDate, ""\d{2}/\d{2}/\d{4}"", true)",Chrome 143.0.7499.171,,,23-01-2026 20:34:04,23-01-2026 20:34:04,0.013s,PASSED
+"verifyEqual(comment, ""Katalon Advanced Automation"")",Chrome 143.0.7499.171,,,23-01-2026 20:34:04,23-01-2026 20:34:04,0.004s,PASSED
+Visual.compareSummaryPage(),Chrome 143.0.7499.171,,,23-01-2026 20:34:04,23-01-2026 20:34:05,0.717s,PASSED
+"SmartWait.waitClickable(findTestObject(""Cura/Summary/btn_GoToHomepage""), 15)",Chrome 143.0.7499.171,,,23-01-2026 20:34:05,23-01-2026 20:34:07,1.981s,PASSED
+,,,,,,,
+Start listener action : afterTestSuite,Chrome 143.0.7499.171,,,23-01-2026 20:34:07,23-01-2026 20:34:07,0.309s,PASSED

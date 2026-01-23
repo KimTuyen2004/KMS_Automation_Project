@@ -1,0 +1,38 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+TS_Cura_Appointment_Flow,Chrome 143.0.7499.171,,,23-01-2026 12:30:36,23-01-2026 12:32:29,1m - 53.511s,FAILED
+,,,,,,,
+Start listener action : beforeTestSuite,Chrome 143.0.7499.171,,,23-01-2026 12:30:36,23-01-2026 12:30:44,8.438s,PASSED
+,,,,,,,
+Test Cases/Login,Chrome 143.0.7499.171,,,23-01-2026 12:30:45,23-01-2026 12:30:51,6.137s,PASSED
+"waitForElementVisible(findTestObject(""Cura/Home/btn_MakeAppointment""), 10)",Chrome 143.0.7499.171,,,23-01-2026 12:30:45,23-01-2026 12:30:46,0.690s,PASSED
+"click(findTestObject(""Cura/Home/btn_MakeAppointment""))",Chrome 143.0.7499.171,,,23-01-2026 12:30:46,23-01-2026 12:30:47,1.222s,PASSED
+"waitForElementVisible(findTestObject(""Cura/Login/txtUsername""), 10)",Chrome 143.0.7499.171,,,23-01-2026 12:30:47,23-01-2026 12:30:48,0.431s,PASSED
+"setText(findTestObject(""Cura/Login/txtUsername""), ""John Doe"")",Chrome 143.0.7499.171,,,23-01-2026 12:30:48,23-01-2026 12:30:49,0.945s,PASSED
+"setText(findTestObject(""Cura/Login/txtPassword""), ""ThisIsNotAPassword"")",Chrome 143.0.7499.171,,,23-01-2026 12:30:49,23-01-2026 12:30:50,0.955s,PASSED
+"click(findTestObject(""Cura/Login/btnLogin""))",Chrome 143.0.7499.171,,,23-01-2026 12:30:50,23-01-2026 12:30:51,1.167s,PASSED
+"waitForElementVisible(findTestObject(""Cura/Appointment/lbl_MakeAppointment""), 10)",Chrome 143.0.7499.171,,,23-01-2026 12:30:51,23-01-2026 12:30:51,0.484s,PASSED
+,,,,,,,
+Test Cases/Appointment,Chrome 143.0.7499.171,,,23-01-2026 12:30:51,23-01-2026 12:31:03,11.858s,PASSED
+"SmartWait.waitUntilVisible(findTestObject(""Cura/Appointment/lbl_MakeAppointment""), 20)",Chrome 143.0.7499.171,,,23-01-2026 12:30:52,23-01-2026 12:30:52,0.353s,PASSED
+"verifyElementPresent(findTestObject(""Cura/Appointment/lbl_MakeAppointment""), 5)",Chrome 143.0.7499.171,,,23-01-2026 12:30:52,23-01-2026 12:30:52,0.306s,PASSED
+"SmartWait.waitUntilClickable(findTestObject(""Cura/Appointment/sel_Facility""), 20)",Chrome 143.0.7499.171,,,23-01-2026 12:30:52,23-01-2026 12:30:53,0.715s,PASSED
+"selectOptionByLabel(findTestObject(""Cura/Appointment/sel_Facility""), ""Hongkong CURA Healthcare Center"", false)",Chrome 143.0.7499.171,,,23-01-2026 12:30:53,23-01-2026 12:30:54,0.752s,PASSED
+"SmartWait.waitUntilClickable(findTestObject(""Cura/Appointment/chk_HospitalReadmission""), 10)",Chrome 143.0.7499.171,,,23-01-2026 12:30:54,23-01-2026 12:30:54,0.685s,PASSED
+"check(findTestObject(""Cura/Appointment/chk_HospitalReadmission""))",Chrome 143.0.7499.171,,,23-01-2026 12:30:54,23-01-2026 12:30:55,0.548s,PASSED
+"SmartWait.waitUntilClickable(findTestObject(""Cura/Appointment/rad_Medicaid""), 10)",Chrome 143.0.7499.171,,,23-01-2026 12:30:55,23-01-2026 12:30:56,0.684s,PASSED
+"click(findTestObject(""Cura/Appointment/rad_Medicaid""))",Chrome 143.0.7499.171,,,23-01-2026 12:30:56,23-01-2026 12:30:56,0.513s,PASSED
+"SmartWait.waitUntilClickable(findTestObject(""Cura/Appointment/txt_VisitDate""), 20)",Chrome 143.0.7499.171,,,23-01-2026 12:30:56,23-01-2026 12:30:57,0.671s,PASSED
+"click(findTestObject(""Cura/Appointment/txt_VisitDate""))",Chrome 143.0.7499.171,,,23-01-2026 12:30:57,23-01-2026 12:30:57,0.440s,PASSED
+components.CalendarPicker.selectDatePlusDays(30),Chrome 143.0.7499.171,,,23-01-2026 12:30:57,23-01-2026 12:31:00,3.178s,PASSED
+"SmartWait.waitUntilVisible(findTestObject(""Cura/Appointment/txt_Comment""), 10)",Chrome 143.0.7499.171,,,23-01-2026 12:31:00,23-01-2026 12:31:01,0.543s,PASSED
+"setText(findTestObject(""Cura/Appointment/txt_Comment""), ""Katalon Advanced Automation"")",Chrome 143.0.7499.171,,,23-01-2026 12:31:01,23-01-2026 12:31:02,0.980s,PASSED
+"SmartWait.waitUntilClickable(findTestObject(""Cura/Appointment/btn_BookAppointment""), 20)",Chrome 143.0.7499.171,,,23-01-2026 12:31:02,23-01-2026 12:31:03,0.688s,PASSED
+"click(findTestObject(""Cura/Appointment/btn_BookAppointment""))",Chrome 143.0.7499.171,,,23-01-2026 12:31:03,23-01-2026 12:31:03,0.475s,PASSED
+,,,,,,,
+Test Cases/Summary,Chrome 143.0.7499.171,,,23-01-2026 12:32:08,23-01-2026 12:32:29,21.105s,FAILED
+"SmartWait.waitUntilVisible(findTestObject(""Cura/Summary/lbl_Confirm_Title""), 20)",Chrome 143.0.7499.171,,,23-01-2026 12:32:08,23-01-2026 12:32:08,0.283s,PASSED
+"verifyElementPresent(findTestObject(""Cura/Summary/lbl_Confirm_Title""), 5)",Chrome 143.0.7499.171,,,23-01-2026 12:32:08,23-01-2026 12:32:08,0.252s,PASSED
+"SmartWait.waitUntilVisible(findTestObject(""Cura/Summary/lbl_Facility_Value""), 10)",Chrome 143.0.7499.171,,,23-01-2026 12:32:08,23-01-2026 12:32:18,10.096s,WARNING
+"facilityText = getText(findTestObject(""Cura/Summary/lbl_Facility_Value"")).trim()",Chrome 143.0.7499.171,,,23-01-2026 12:32:18,23-01-2026 12:32:29,10.446s,FAILED
+,,,,,,,
+Start listener action : afterTestSuite,Chrome 143.0.7499.171,,,23-01-2026 12:32:29,23-01-2026 12:32:29,0.356s,PASSED

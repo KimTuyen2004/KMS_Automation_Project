@@ -1,0 +1,18 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+TS_Cura_Appointment_Flow,Chrome 143.0.7499.171,,,23-01-2026 00:31:32,23-01-2026 00:32:49,1m - 16.887s,ERROR
+,,,,,,,
+Start listener action : beforeSuite,Chrome 143.0.7499.171,,,23-01-2026 00:31:32,23-01-2026 00:31:41,8.695s,PASSED
+,,,,,,,
+Test Cases/Login,Chrome 143.0.7499.171,,,23-01-2026 00:31:54,23-01-2026 00:31:55,1.141s,FAILED
+"verifyElementPresent(findTestObject(""Cura/Home/btn_MakeAppointment""), 10)",Chrome 143.0.7499.171,,,23-01-2026 00:31:54,23-01-2026 00:31:55,1.107s,FAILED
+,,,,,,,
+Test Cases/Appointment,Chrome 143.0.7499.171,,,23-01-2026 00:32:32,23-01-2026 00:32:44,12.292s,FAILED
+"verifyElementPresent(findTestObject(""Cura/Appointment/lbl_MakeAppointment""), 10, STOP_ON_FAILURE)",Chrome 143.0.7499.171,,,23-01-2026 00:32:32,23-01-2026 00:32:44,12.272s,FAILED
+,,,,,,,
+Test Cases/Summary,Chrome 143.0.7499.171,,,23-01-2026 00:32:47,23-01-2026 00:32:48,0.730s,FAILED
+"waitForElementVisible(findTestObject(""Cura/Summary/lbl_AppointmentConfirmation""), 20)",Chrome 143.0.7499.171,,,23-01-2026 00:32:47,23-01-2026 00:32:48,0.708s,FAILED
+,,,,,,,
+Test Cases/Logout,Chrome 143.0.7499.171,,,23-01-2026 00:32:48,23-01-2026 00:32:48,0.028s,ERROR
+components.SideMenu.logout(),Chrome 143.0.7499.171,,,23-01-2026 00:32:48,23-01-2026 00:32:48,0.008s,FAILED
+,,,,,,,
+Start listener action : afterSuite,Chrome 143.0.7499.171,,,23-01-2026 00:32:48,23-01-2026 00:32:49,0.265s,PASSED

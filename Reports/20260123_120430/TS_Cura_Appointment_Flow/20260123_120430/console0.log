@@ -1,0 +1,355 @@
+2026-01-23 12:04:35.023 INFO  c.k.k.c.l.logback.LogbackConfigurator    - Logback default configuration initialized from: C:\Users\ADMIN\.katalon\packages\KSE-10.4.3\configuration\org.eclipse.osgi\133\0\.cp\resources\logback\logback-execution.xml
+2026-01-23 12:04:35.023 INFO  c.k.k.c.l.logback.LogbackConfigurator    - Logback custom configuration initialized from: D:\KMS_Automation_Project\Include\config\log.properties
+2026-01-23 12:04:36.179 INFO  c.k.katalon.core.main.TestSuiteExecutor  - START Test Suites/TS_Cura_Appointment_Flow
+2026-01-23 12:04:36.285 INFO  c.k.katalon.core.main.TestSuiteExecutor  - userFullName = Hà Sang Nguyễn
+2026-01-23 12:04:36.301 INFO  c.k.katalon.core.main.TestSuiteExecutor  - projectName = KMS_Automation_Project
+2026-01-23 12:04:36.301 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostName = ADMIN - DESKTOP-R4TO9PD
+2026-01-23 12:04:36.301 INFO  c.k.katalon.core.main.TestSuiteExecutor  - os = Windows 10 64bit
+2026-01-23 12:04:36.301 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostAddress = 172.20.10.3
+2026-01-23 12:04:36.309 INFO  c.k.katalon.core.main.TestSuiteExecutor  - katalonVersion = 10.4.3.0
+2026-01-23 12:04:36.818 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2026-01-23 12:04:36.958 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+Jan 23, 2026 12:04:39 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 143, returning the closest version; found: 142; Please update to a Selenium version that supports CDP version 143
+2026-01-23 12:04:40.074 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 5efaf2ebd8b3f77695e63fd95f165fd2
+2026-01-23 12:04:40.074 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 143.0.7499.171
+2026-01-23 12:04:40.090 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 10
+2026-01-23 12:04:40.093 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.34.0
+2026-01-23 12:04:40.113 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-01-23 12:04:44.501 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-01-23 12:04:44.501 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/Login
+2026-01-23 12:04:44.645 DEBUG testcase.Login                           - 1: waitForElementVisible(findTestObject("Cura/Home/btn_MakeAppointment"), 10)
+2026-01-23 12:04:45.182 DEBUG testcase.Login                           - 2: click(findTestObject("Cura/Home/btn_MakeAppointment"))
+2026-01-23 12:04:46.350 DEBUG testcase.Login                           - 3: waitForElementVisible(findTestObject("Cura/Login/txtUsername"), 10)
+2026-01-23 12:04:46.796 DEBUG testcase.Login                           - 4: setText(findTestObject("Cura/Login/txtUsername"), "John Doe")
+2026-01-23 12:04:47.810 DEBUG testcase.Login                           - 5: setText(findTestObject("Cura/Login/txtPassword"), "ThisIsNotAPassword")
+2026-01-23 12:04:48.828 DEBUG testcase.Login                           - 6: click(findTestObject("Cura/Login/btnLogin"))
+2026-01-23 12:04:50.065 DEBUG testcase.Login                           - 7: waitForElementVisible(findTestObject("Cura/Appointment/lbl_MakeAppointment"), 10)
+2026-01-23 12:04:50.585 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/Login
+2026-01-23 12:04:50.598 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-01-23 12:04:50.599 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/Appointment
+2026-01-23 12:04:50.731 DEBUG testcase.Appointment                     - 1: waitForElementVisible(findTestObject("Cura/Appointment/sel_Facility"), 10)
+2026-01-23 12:04:51.035 DEBUG testcase.Appointment                     - 2: selectOptionByLabel(findTestObject("Cura/Appointment/sel_Facility"), "Hongkong CURA Healthcare Center", false)
+2026-01-23 12:04:51.727 DEBUG testcase.Appointment                     - 3: check(findTestObject("Cura/Appointment/chk_HospitalReadmission"))
+2026-01-23 12:04:52.243 DEBUG testcase.Appointment                     - 4: click(findTestObject("Cura/Appointment/rad_Medicaid"))
+2026-01-23 12:04:52.760 DEBUG testcase.Appointment                     - 5: components.CalendarPicker.selectDatePlusDays(30)
+2026-01-23 12:04:52.794 ERROR k.k.c.m.CustomKeywordDelegatingMetaClass - ❌ groovy.lang.MissingMethodException: No signature of method: components.CalendarPicker.ow() is applicable for argument types: () values: []
+Possible solutions: is(java.lang.Object), any(), tap(groovy.lang.Closure), use([Ljava.lang.Object;), any(groovy.lang.Closure), use(java.util.List, groovy.lang.Closure)
+groovy.lang.MissingMethodException: No signature of method: components.CalendarPicker.ow() is applicable for argument types: () values: []
+Possible solutions: is(java.lang.Object), any(), tap(groovy.lang.Closure), use([Ljava.lang.Object;), any(groovy.lang.Closure), use(java.util.List, groovy.lang.Closure)
+2026-01-23 12:04:52.802 ERROR c.k.katalon.core.main.TestCaseExecutor   - ❌ Test Cases/Appointment FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: components.CalendarPicker.ow() is applicable for argument types: () values: []
+Possible solutions: is(java.lang.Object), any(), tap(groovy.lang.Closure), use([Ljava.lang.Object;), any(groovy.lang.Closure), use(java.util.List, groovy.lang.Closure)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.throwError(CustomKeywordDelegatingMetaClass.java:102)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:73)
+	at Appointment.run(Appointment:39)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:490)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:481)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:460)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:452)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:205)
+	at TempTestSuite1769144670133.run(TempTestSuite1769144670133.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: components.CalendarPicker.ow() is applicable for argument types: () values: []
+Possible solutions: is(java.lang.Object), any(), tap(groovy.lang.Closure), use([Ljava.lang.Object;), any(groovy.lang.Closure), use(java.util.List, groovy.lang.Closure)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	at Script1769051297239.run(Script1769051297239.groovy:39)
+	... 15 more
+Caused by: groovy.lang.MissingMethodException: No signature of method: components.CalendarPicker.ow() is applicable for argument types: () values: []
+Possible solutions: is(java.lang.Object), any(), tap(groovy.lang.Closure), use([Ljava.lang.Object;), any(groovy.lang.Closure), use(java.util.List, groovy.lang.Closure)
+	at components.CalendarPicker.selectDatePlusDays(CalendarPicker.groovy:30)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	at Appointment.run(Appointment:39)
+	... 15 more
+
+2026-01-23 12:04:52.807 ERROR c.k.katalon.core.main.TestCaseExecutor   - ❌ Test Cases/Appointment FAILED.
+Reason:
+org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: components.CalendarPicker.ow() is applicable for argument types: () values: []
+Possible solutions: is(java.lang.Object), any(), tap(groovy.lang.Closure), use([Ljava.lang.Object;), any(groovy.lang.Closure), use(java.util.List, groovy.lang.Closure)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	at Appointment.run(Appointment:39)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:490)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:481)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:460)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:452)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:205)
+	at TempTestSuite1769144670133.run(TempTestSuite1769144670133.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: groovy.lang.MissingMethodException: No signature of method: components.CalendarPicker.ow() is applicable for argument types: () values: []
+Possible solutions: is(java.lang.Object), any(), tap(groovy.lang.Closure), use([Ljava.lang.Object;), any(groovy.lang.Closure), use(java.util.List, groovy.lang.Closure)
+	at components.CalendarPicker.selectDatePlusDays(CalendarPicker.groovy:30)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	... 17 more
+
+2026-01-23 12:04:52.814 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/Appointment
+2026-01-23 12:04:52.818 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-01-23 12:04:52.818 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/Appointment
+2026-01-23 12:04:52.847 DEBUG testcase.Appointment                     - 1: waitForElementVisible(findTestObject("Cura/Appointment/sel_Facility"), 10)
+2026-01-23 12:04:53.145 DEBUG testcase.Appointment                     - 2: selectOptionByLabel(findTestObject("Cura/Appointment/sel_Facility"), "Hongkong CURA Healthcare Center", false)
+2026-01-23 12:04:53.774 DEBUG testcase.Appointment                     - 3: check(findTestObject("Cura/Appointment/chk_HospitalReadmission"))
+2026-01-23 12:04:54.329 DEBUG testcase.Appointment                     - 4: click(findTestObject("Cura/Appointment/rad_Medicaid"))
+2026-01-23 12:04:54.803 DEBUG testcase.Appointment                     - 5: components.CalendarPicker.selectDatePlusDays(30)
+2026-01-23 12:04:54.814 ERROR k.k.c.m.CustomKeywordDelegatingMetaClass - ❌ groovy.lang.MissingMethodException: No signature of method: components.CalendarPicker.ow() is applicable for argument types: () values: []
+Possible solutions: is(java.lang.Object), any(), tap(groovy.lang.Closure), use([Ljava.lang.Object;), any(groovy.lang.Closure), use(java.util.List, groovy.lang.Closure)
+groovy.lang.MissingMethodException: No signature of method: components.CalendarPicker.ow() is applicable for argument types: () values: []
+Possible solutions: is(java.lang.Object), any(), tap(groovy.lang.Closure), use([Ljava.lang.Object;), any(groovy.lang.Closure), use(java.util.List, groovy.lang.Closure)
+2026-01-23 12:04:54.817 ERROR c.k.katalon.core.main.TestCaseExecutor   - ❌ Test Cases/Appointment FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: components.CalendarPicker.ow() is applicable for argument types: () values: []
+Possible solutions: is(java.lang.Object), any(), tap(groovy.lang.Closure), use([Ljava.lang.Object;), any(groovy.lang.Closure), use(java.util.List, groovy.lang.Closure)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.throwError(CustomKeywordDelegatingMetaClass.java:102)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:73)
+	at Appointment.run(Appointment:39)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:490)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:481)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:460)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:452)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:205)
+	at TempTestSuite1769144670133.run(TempTestSuite1769144670133.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: components.CalendarPicker.ow() is applicable for argument types: () values: []
+Possible solutions: is(java.lang.Object), any(), tap(groovy.lang.Closure), use([Ljava.lang.Object;), any(groovy.lang.Closure), use(java.util.List, groovy.lang.Closure)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	at Script1769051297239.run(Script1769051297239.groovy:39)
+	... 16 more
+Caused by: groovy.lang.MissingMethodException: No signature of method: components.CalendarPicker.ow() is applicable for argument types: () values: []
+Possible solutions: is(java.lang.Object), any(), tap(groovy.lang.Closure), use([Ljava.lang.Object;), any(groovy.lang.Closure), use(java.util.List, groovy.lang.Closure)
+	at components.CalendarPicker.selectDatePlusDays(CalendarPicker.groovy:30)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	at Appointment.run(Appointment:39)
+	... 16 more
+
+2026-01-23 12:04:54.822 ERROR c.k.katalon.core.main.TestCaseExecutor   - ❌ Test Cases/Appointment FAILED.
+Reason:
+org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: components.CalendarPicker.ow() is applicable for argument types: () values: []
+Possible solutions: is(java.lang.Object), any(), tap(groovy.lang.Closure), use([Ljava.lang.Object;), any(groovy.lang.Closure), use(java.util.List, groovy.lang.Closure)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	at Appointment.run(Appointment:39)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:490)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:481)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:460)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:452)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:205)
+	at TempTestSuite1769144670133.run(TempTestSuite1769144670133.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: groovy.lang.MissingMethodException: No signature of method: components.CalendarPicker.ow() is applicable for argument types: () values: []
+Possible solutions: is(java.lang.Object), any(), tap(groovy.lang.Closure), use([Ljava.lang.Object;), any(groovy.lang.Closure), use(java.util.List, groovy.lang.Closure)
+	at components.CalendarPicker.selectDatePlusDays(CalendarPicker.groovy:30)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	... 18 more
+
+2026-01-23 12:04:54.825 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/Appointment
+2026-01-23 12:04:54.834 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-01-23 12:04:54.834 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/Appointment
+2026-01-23 12:04:54.856 DEBUG testcase.Appointment                     - 1: waitForElementVisible(findTestObject("Cura/Appointment/sel_Facility"), 10)
+2026-01-23 12:04:55.133 DEBUG testcase.Appointment                     - 2: selectOptionByLabel(findTestObject("Cura/Appointment/sel_Facility"), "Hongkong CURA Healthcare Center", false)
+2026-01-23 12:04:55.737 DEBUG testcase.Appointment                     - 3: check(findTestObject("Cura/Appointment/chk_HospitalReadmission"))
+2026-01-23 12:04:56.211 DEBUG testcase.Appointment                     - 4: click(findTestObject("Cura/Appointment/rad_Medicaid"))
+2026-01-23 12:04:56.695 DEBUG testcase.Appointment                     - 5: components.CalendarPicker.selectDatePlusDays(30)
+2026-01-23 12:04:56.703 ERROR k.k.c.m.CustomKeywordDelegatingMetaClass - ❌ groovy.lang.MissingMethodException: No signature of method: components.CalendarPicker.ow() is applicable for argument types: () values: []
+Possible solutions: is(java.lang.Object), any(), tap(groovy.lang.Closure), use([Ljava.lang.Object;), any(groovy.lang.Closure), use(java.util.List, groovy.lang.Closure)
+groovy.lang.MissingMethodException: No signature of method: components.CalendarPicker.ow() is applicable for argument types: () values: []
+Possible solutions: is(java.lang.Object), any(), tap(groovy.lang.Closure), use([Ljava.lang.Object;), any(groovy.lang.Closure), use(java.util.List, groovy.lang.Closure)
+2026-01-23 12:04:56.705 ERROR c.k.katalon.core.main.TestCaseExecutor   - ❌ Test Cases/Appointment FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: components.CalendarPicker.ow() is applicable for argument types: () values: []
+Possible solutions: is(java.lang.Object), any(), tap(groovy.lang.Closure), use([Ljava.lang.Object;), any(groovy.lang.Closure), use(java.util.List, groovy.lang.Closure)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.throwError(CustomKeywordDelegatingMetaClass.java:102)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:73)
+	at Appointment.run(Appointment:39)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:490)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:481)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:460)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:452)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:205)
+	at TempTestSuite1769144670133.run(TempTestSuite1769144670133.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: components.CalendarPicker.ow() is applicable for argument types: () values: []
+Possible solutions: is(java.lang.Object), any(), tap(groovy.lang.Closure), use([Ljava.lang.Object;), any(groovy.lang.Closure), use(java.util.List, groovy.lang.Closure)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	at Script1769051297239.run(Script1769051297239.groovy:39)
+	... 17 more
+Caused by: groovy.lang.MissingMethodException: No signature of method: components.CalendarPicker.ow() is applicable for argument types: () values: []
+Possible solutions: is(java.lang.Object), any(), tap(groovy.lang.Closure), use([Ljava.lang.Object;), any(groovy.lang.Closure), use(java.util.List, groovy.lang.Closure)
+	at components.CalendarPicker.selectDatePlusDays(CalendarPicker.groovy:30)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	at Appointment.run(Appointment:39)
+	... 17 more
+
+2026-01-23 12:04:56.708 ERROR c.k.katalon.core.main.TestCaseExecutor   - ❌ Test Cases/Appointment FAILED.
+Reason:
+org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: components.CalendarPicker.ow() is applicable for argument types: () values: []
+Possible solutions: is(java.lang.Object), any(), tap(groovy.lang.Closure), use([Ljava.lang.Object;), any(groovy.lang.Closure), use(java.util.List, groovy.lang.Closure)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	at Appointment.run(Appointment:39)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:490)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:481)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:460)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:452)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:205)
+	at TempTestSuite1769144670133.run(TempTestSuite1769144670133.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: groovy.lang.MissingMethodException: No signature of method: components.CalendarPicker.ow() is applicable for argument types: () values: []
+Possible solutions: is(java.lang.Object), any(), tap(groovy.lang.Closure), use([Ljava.lang.Object;), any(groovy.lang.Closure), use(java.util.List, groovy.lang.Closure)
+	at components.CalendarPicker.selectDatePlusDays(CalendarPicker.groovy:30)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	... 19 more
+
+2026-01-23 12:04:56.713 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/Appointment
+2026-01-23 12:04:56.715 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-01-23 12:04:56.718 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/Appointment
+2026-01-23 12:04:56.733 DEBUG testcase.Appointment                     - 1: waitForElementVisible(findTestObject("Cura/Appointment/sel_Facility"), 10)
+2026-01-23 12:04:57.009 DEBUG testcase.Appointment                     - 2: selectOptionByLabel(findTestObject("Cura/Appointment/sel_Facility"), "Hongkong CURA Healthcare Center", false)
+2026-01-23 12:04:57.606 DEBUG testcase.Appointment                     - 3: check(findTestObject("Cura/Appointment/chk_HospitalReadmission"))
+2026-01-23 12:04:57.962 DEBUG testcase.Appointment                     - 4: click(findTestObject("Cura/Appointment/rad_Medicaid"))
+2026-01-23 12:04:58.412 DEBUG testcase.Appointment                     - 5: components.CalendarPicker.selectDatePlusDays(30)
+2026-01-23 12:04:58.419 ERROR k.k.c.m.CustomKeywordDelegatingMetaClass - ❌ groovy.lang.MissingMethodException: No signature of method: components.CalendarPicker.ow() is applicable for argument types: () values: []
+Possible solutions: is(java.lang.Object), any(), tap(groovy.lang.Closure), use([Ljava.lang.Object;), any(groovy.lang.Closure), use(java.util.List, groovy.lang.Closure)
+groovy.lang.MissingMethodException: No signature of method: components.CalendarPicker.ow() is applicable for argument types: () values: []
+Possible solutions: is(java.lang.Object), any(), tap(groovy.lang.Closure), use([Ljava.lang.Object;), any(groovy.lang.Closure), use(java.util.List, groovy.lang.Closure)
+2026-01-23 12:04:58.421 ERROR c.k.katalon.core.main.TestCaseExecutor   - ❌ Test Cases/Appointment FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: components.CalendarPicker.ow() is applicable for argument types: () values: []
+Possible solutions: is(java.lang.Object), any(), tap(groovy.lang.Closure), use([Ljava.lang.Object;), any(groovy.lang.Closure), use(java.util.List, groovy.lang.Closure)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.throwError(CustomKeywordDelegatingMetaClass.java:102)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:73)
+	at Appointment.run(Appointment:39)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:490)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:481)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:460)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:452)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:205)
+	at TempTestSuite1769144670133.run(TempTestSuite1769144670133.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: components.CalendarPicker.ow() is applicable for argument types: () values: []
+Possible solutions: is(java.lang.Object), any(), tap(groovy.lang.Closure), use([Ljava.lang.Object;), any(groovy.lang.Closure), use(java.util.List, groovy.lang.Closure)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	at Script1769051297239.run(Script1769051297239.groovy:39)
+	... 18 more
+Caused by: groovy.lang.MissingMethodException: No signature of method: components.CalendarPicker.ow() is applicable for argument types: () values: []
+Possible solutions: is(java.lang.Object), any(), tap(groovy.lang.Closure), use([Ljava.lang.Object;), any(groovy.lang.Closure), use(java.util.List, groovy.lang.Closure)
+	at components.CalendarPicker.selectDatePlusDays(CalendarPicker.groovy:30)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	at Appointment.run(Appointment:39)
+	... 18 more
+
+2026-01-23 12:04:58.423 ERROR c.k.katalon.core.main.TestCaseExecutor   - ❌ Test Cases/Appointment FAILED.
+Reason:
+org.codehaus.groovy.runtime.InvokerInvocationException: groovy.lang.MissingMethodException: No signature of method: components.CalendarPicker.ow() is applicable for argument types: () values: []
+Possible solutions: is(java.lang.Object), any(), tap(groovy.lang.Closure), use([Ljava.lang.Object;), any(groovy.lang.Closure), use(java.util.List, groovy.lang.Closure)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	at Appointment.run(Appointment:39)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:490)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:481)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:460)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:452)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:153)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:110)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:205)
+	at TempTestSuite1769144670133.run(TempTestSuite1769144670133.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: groovy.lang.MissingMethodException: No signature of method: components.CalendarPicker.ow() is applicable for argument types: () values: []
+Possible solutions: is(java.lang.Object), any(), tap(groovy.lang.Closure), use([Ljava.lang.Object;), any(groovy.lang.Closure), use(java.util.List, groovy.lang.Closure)
+	at components.CalendarPicker.selectDatePlusDays(CalendarPicker.groovy:30)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	... 20 more
+
+2026-01-23 12:04:58.428 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/Appointment
+2026-01-23 12:04:58.836 INFO  c.k.katalon.core.main.TestSuiteExecutor  - --------------------
+2026-01-23 12:04:58.836 INFO  c.k.katalon.core.main.TestSuiteExecutor  - END Test Suites/TS_Cura_Appointment_Flow
+2026-01-23 12:04:58.836 INFO  c.k.katalon.core.main.TestSuiteExecutor  - ====================

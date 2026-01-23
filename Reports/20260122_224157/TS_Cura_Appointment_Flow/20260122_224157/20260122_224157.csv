@@ -1,0 +1,14 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+TS_Cura_Appointment_Flow,,,,22-01-2026 22:42:02,22-01-2026 22:42:05,2.748s,ERROR
+,,,,,,,
+Test Cases/Appointment,,,,22-01-2026 22:42:04,22-01-2026 22:42:04,0.065s,ERROR
+"selectOptionByValue(findTestObject(""Object Repository/Cura/Appointment/sel_Facility""), ""Hongkong CURA Healthcare Center"", false)",,,,22-01-2026 22:42:04,22-01-2026 22:42:04,0.022s,ERROR
+,,,,,,,
+Test Cases/Appointment,,,,22-01-2026 22:42:04,22-01-2026 22:42:04,0.056s,ERROR
+"selectOptionByValue(findTestObject(""Object Repository/Cura/Appointment/sel_Facility""), ""Hongkong CURA Healthcare Center"", false)",,,,22-01-2026 22:42:04,22-01-2026 22:42:04,0.018s,ERROR
+,,,,,,,
+Test Cases/Summary,,,,22-01-2026 22:42:05,22-01-2026 22:42:05,0.039s,ERROR
+"waitForElementVisible(findTestObject(""Object Repository/Cura/Summary/lbl_Confirm_Title""), 10)",,,,22-01-2026 22:42:05,22-01-2026 22:42:05,0.013s,ERROR
+,,,,,,,
+Test Cases/Logout,,,,22-01-2026 22:42:05,22-01-2026 22:42:05,0.050s,ERROR
+components.SideMenu.logout(),,,,22-01-2026 22:42:05,22-01-2026 22:42:05,0.022s,ERROR

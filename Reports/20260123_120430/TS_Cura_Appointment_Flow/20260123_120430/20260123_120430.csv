@@ -1,0 +1,22 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+TS_Cura_Appointment_Flow,Chrome 143.0.7499.171,,,23-01-2026 12:04:36,23-01-2026 12:04:58,22.575s,ERROR
+,,,,,,,
+Start listener action : beforeTestSuite,Chrome 143.0.7499.171,,,23-01-2026 12:04:36,23-01-2026 12:04:43,7.611s,PASSED
+,,,,,,,
+Test Cases/Login,Chrome 143.0.7499.171,,,23-01-2026 12:04:44,23-01-2026 12:04:50,6.092s,PASSED
+"waitForElementVisible(findTestObject(""Cura/Home/btn_MakeAppointment""), 10)",Chrome 143.0.7499.171,,,23-01-2026 12:04:44,23-01-2026 12:04:45,0.537s,PASSED
+"click(findTestObject(""Cura/Home/btn_MakeAppointment""))",Chrome 143.0.7499.171,,,23-01-2026 12:04:45,23-01-2026 12:04:46,1.168s,PASSED
+"waitForElementVisible(findTestObject(""Cura/Login/txtUsername""), 10)",Chrome 143.0.7499.171,,,23-01-2026 12:04:46,23-01-2026 12:04:46,0.446s,PASSED
+"setText(findTestObject(""Cura/Login/txtUsername""), ""John Doe"")",Chrome 143.0.7499.171,,,23-01-2026 12:04:46,23-01-2026 12:04:47,1.014s,PASSED
+"setText(findTestObject(""Cura/Login/txtPassword""), ""ThisIsNotAPassword"")",Chrome 143.0.7499.171,,,23-01-2026 12:04:47,23-01-2026 12:04:48,1.018s,PASSED
+"click(findTestObject(""Cura/Login/btnLogin""))",Chrome 143.0.7499.171,,,23-01-2026 12:04:48,23-01-2026 12:04:50,1.237s,PASSED
+"waitForElementVisible(findTestObject(""Cura/Appointment/lbl_MakeAppointment""), 10)",Chrome 143.0.7499.171,,,23-01-2026 12:04:50,23-01-2026 12:04:50,0.520s,PASSED
+,,,,,,,
+Test Cases/Appointment,Chrome 143.0.7499.171,,,23-01-2026 12:04:56,23-01-2026 12:04:58,1.711s,ERROR
+"waitForElementVisible(findTestObject(""Cura/Appointment/sel_Facility""), 10)",Chrome 143.0.7499.171,,,23-01-2026 12:04:56,23-01-2026 12:04:57,0.275s,PASSED
+"selectOptionByLabel(findTestObject(""Cura/Appointment/sel_Facility""), ""Hongkong CURA Healthcare Center"", false)",Chrome 143.0.7499.171,,,23-01-2026 12:04:57,23-01-2026 12:04:57,0.595s,PASSED
+"check(findTestObject(""Cura/Appointment/chk_HospitalReadmission""))",Chrome 143.0.7499.171,,,23-01-2026 12:04:57,23-01-2026 12:04:57,0.356s,PASSED
+"click(findTestObject(""Cura/Appointment/rad_Medicaid""))",Chrome 143.0.7499.171,,,23-01-2026 12:04:57,23-01-2026 12:04:58,0.450s,PASSED
+components.CalendarPicker.selectDatePlusDays(30),Chrome 143.0.7499.171,,,23-01-2026 12:04:58,23-01-2026 12:04:58,0.011s,ERROR
+,,,,,,,
+Start listener action : afterTestSuite,Chrome 143.0.7499.171,,,23-01-2026 12:04:58,23-01-2026 12:04:58,0.352s,PASSED

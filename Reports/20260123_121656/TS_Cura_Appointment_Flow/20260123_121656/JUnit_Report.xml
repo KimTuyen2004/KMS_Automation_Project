@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TS_Cura_Appointment_Flow" time="23.995" tests="2" failures="0" errors="0">
+   <testsuite name="TS_Cura_Appointment_Flow" tests="2" failures="0" errors="0" time="23.995" skipped="0" timestamp="2026-01-23T05:17:02.528Z" hostname="ADMIN - DESKTOP-R4TO9PD" id="Test Suites/TS_Cura_Appointment_Flow">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform"/>
+         <property name="logFolder" value="D:\\KMS_Automation_Project\\Reports\\20260123_121656\\TS_Cura_Appointment_Flow\\20260123_121656"/>
+         <property name="logFiles" value="D:\\KMS_Automation_Project\\Reports\\20260123_121656\\TS_Cura_Appointment_Flow\\20260123_121656\\console0.log, D:\\KMS_Automation_Project\\Reports\\20260123_121656\\TS_Cura_Appointment_Flow\\20260123_121656\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="ADMIN - DESKTOP-R4TO9PD"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="10.4.3.0"/>
+         <property name="browser" value="Chrome 143.0.7499.171"/>
+         <property name="userFullName" value="Hà Sang Nguyễn"/>
+         <property name="hostAddress" value="172.20.10.3"/>
+         <property name="sessionId" value="07c5f0565d71fe950eed112a180649db"/>
+         <property name="projectName" value="KMS_Automation_Project"/>
+         <property name="seleniumVersion" value="4.34.0"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Login" time="7.086" classname="Test Cases/Login" status="PASSED">
+         <system-out><![CDATA[23-01-2026T12:17:11 - [TEST_CASE][PASSED] - Test Cases/Login: Test Cases/Login
+
+23-01-2026T12:17:12 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Cura/Home/btn_MakeAppointment"), 10): Object 'Object Repository/Cura/Home/btn_MakeAppointment' is visible
+
+23-01-2026T12:17:12 - [MESSAGE][PASSED] - Object 'Object Repository/Cura/Home/btn_MakeAppointment' is visible
+
+23-01-2026T12:17:12 - [TEST_STEP][PASSED] - click(findTestObject("Cura/Home/btn_MakeAppointment")): Object: 'Object Repository/Cura/Home/btn_MakeAppointment' is clicked on
+
+23-01-2026T12:17:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Cura/Home/btn_MakeAppointment' is clicked on
+
+23-01-2026T12:17:13 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Cura/Login/txtUsername"), 10): Object 'Object Repository/Cura/Login/txtUsername' is visible
+
+23-01-2026T12:17:14 - [MESSAGE][PASSED] - Object 'Object Repository/Cura/Login/txtUsername' is visible
+
+23-01-2026T12:17:14 - [TEST_STEP][PASSED] - setText(findTestObject("Cura/Login/txtUsername"), "John Doe"): Text 'John Doe' is set on object 'Object Repository/Cura/Login/txtUsername'
+
+23-01-2026T12:17:15 - [MESSAGE][PASSED] - Text 'John Doe' is set on object 'Object Repository/Cura/Login/txtUsername'
+
+23-01-2026T12:17:15 - [TEST_STEP][PASSED] - setText(findTestObject("Cura/Login/txtPassword"), "ThisIsNotAPassword"): Text 'ThisIsNotAPassword' is set on object 'Object Repository/Cura/Login/txtPassword'
+
+23-01-2026T12:17:16 - [MESSAGE][PASSED] - Text 'ThisIsNotAPassword' is set on object 'Object Repository/Cura/Login/txtPassword'
+
+23-01-2026T12:17:16 - [TEST_STEP][PASSED] - click(findTestObject("Cura/Login/btnLogin")): Object: 'Object Repository/Cura/Login/btnLogin' is clicked on
+
+23-01-2026T12:17:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Cura/Login/btnLogin' is clicked on
+
+23-01-2026T12:17:18 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Cura/Appointment/lbl_MakeAppointment"), 10): Object 'Object Repository/Cura/Appointment/lbl_MakeAppointment' is visible
+
+23-01-2026T12:17:18 - [MESSAGE][PASSED] - Object 'Object Repository/Cura/Appointment/lbl_MakeAppointment' is visible]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Appointment" time="7.574" classname="Test Cases/Appointment" status="PASSED">
+         <system-out><![CDATA[23-01-2026T12:17:18 - [TEST_CASE][PASSED] - Test Cases/Appointment: Test Cases/Appointment
+
+23-01-2026T12:17:19 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Cura/Appointment/lbl_MakeAppointment"), 10, STOP_ON_FAILURE): Object 'Object Repository/Cura/Appointment/lbl_MakeAppointment' is present
+
+23-01-2026T12:17:19 - [MESSAGE][PASSED] - Object 'Object Repository/Cura/Appointment/lbl_MakeAppointment' is present
+
+23-01-2026T12:17:19 - [TEST_STEP][PASSED] - selectOptionByLabel(findTestObject("Cura/Appointment/sel_Facility"), "Hongkong CURA Healthcare Center", false): All options with label 'Hongkong CURA Healthcare Center' are selected in object 'Object Repository/Cura/Appointment/sel_Facility' 
+
+23-01-2026T12:17:20 - [MESSAGE][PASSED] - All options with label 'Hongkong CURA Healthcare Center' are selected in object 'Object Repository/Cura/Appointment/sel_Facility' 
+
+23-01-2026T12:17:20 - [TEST_STEP][PASSED] - check(findTestObject("Cura/Appointment/chk_HospitalReadmission")): Object 'Object Repository/Cura/Appointment/chk_HospitalReadmission' is checked
+
+23-01-2026T12:17:20 - [MESSAGE][PASSED] - Object 'Object Repository/Cura/Appointment/chk_HospitalReadmission' is checked
+
+23-01-2026T12:17:20 - [TEST_STEP][PASSED] - click(findTestObject("Cura/Appointment/rad_Medicaid")): Object: 'Object Repository/Cura/Appointment/rad_Medicaid' is clicked on
+
+23-01-2026T12:17:21 - [MESSAGE][PASSED] - Object: 'Object Repository/Cura/Appointment/rad_Medicaid' is clicked on
+
+23-01-2026T12:17:21 - [TEST_STEP][PASSED] - click(findTestObject("Cura/Appointment/txt_VisitDate")): Object: 'Object Repository/Cura/Appointment/txt_VisitDate' is clicked on
+
+23-01-2026T12:17:22 - [MESSAGE][PASSED] - Object: 'Object Repository/Cura/Appointment/txt_VisitDate' is clicked on
+
+23-01-2026T12:17:22 - [TEST_STEP][PASSED] - components.CalendarPicker.selectDatePlusDays(30): components.CalendarPicker.selectDatePlusDays is PASSED
+
+23-01-2026T12:17:22 - [MESSAGE][PASSED] - Object: '' is clicked on
+
+23-01-2026T12:17:23 - [MESSAGE][PASSED] - Object: '' is clicked on
+
+23-01-2026T12:17:23 - [MESSAGE][PASSED] - components.CalendarPicker.selectDatePlusDays is PASSED
+
+23-01-2026T12:17:23 - [TEST_STEP][PASSED] - setText(findTestObject("Cura/Appointment/txt_Comment"), "Katalon Advanced Automation"): Text 'Katalon Advanced Automation' is set on object 'Object Repository/Cura/Appointment/txt_Comment'
+
+23-01-2026T12:17:24 - [MESSAGE][PASSED] - Text 'Katalon Advanced Automation' is set on object 'Object Repository/Cura/Appointment/txt_Comment'
+
+23-01-2026T12:17:24 - [TEST_STEP][PASSED] - click(findTestObject("Cura/Appointment/btn_BookAppointment")): Object: 'Object Repository/Cura/Appointment/btn_BookAppointment' is clicked on
+
+23-01-2026T12:17:26 - [MESSAGE][PASSED] - Object: 'Object Repository/Cura/Appointment/btn_BookAppointment' is clicked on]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[23-01-2026T12:17:02 - [TEST_STEP][PASSED] - Start listener action : beforeTestSuite: Navigate to 'https://katalon-demo-cura.herokuapp.com/' successfully
+
+23-01-2026T12:17:02 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+23-01-2026T12:17:02 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+23-01-2026T12:17:03 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+23-01-2026T12:17:07 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+23-01-2026T12:17:07 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+23-01-2026T12:17:07 - [MESSAGE][PASSED] - Current window maximized
+
+23-01-2026T12:17:07 - [TEST_STEP][PASSED] - navigateToUrl("https://katalon-demo-cura.herokuapp.com/"): Navigate to 'https://katalon-demo-cura.herokuapp.com/' successfully
+
+23-01-2026T12:17:11 - [MESSAGE][PASSED] - Navigate to 'https://katalon-demo-cura.herokuapp.com/' successfully
+
+23-01-2026T12:17:02 - [TEST_SUITE][PASSED] - TS_Cura_Appointment_Flow: null
+
+23-01-2026T12:17:26 - [TEST_STEP][PASSED] - Start listener action : afterTestSuite: Browser is closed
+
+23-01-2026T12:17:26 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+23-01-2026T12:17:26 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
